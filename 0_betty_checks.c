@@ -1,19 +1,15 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
- * factorial - finds factorial
- * @n: int
- * Return: int
+ * main - Entry point
+ * This now uses the printf function
+ * Return: Always 0 (Success)
  */
-if (n < 0)
+
+int main(void)
 {
-	return (-1);
-}
-else if (n == 0)
-{
-        return (1);
+	return (0);
 }
 
-return (n * factorial(n - 1));
 
-}
 
