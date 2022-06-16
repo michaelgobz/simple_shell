@@ -5,9 +5,15 @@
  * @info: shell info
  * @dir: directory
  */
+<<<<<<< HEAD
 void __cd_error(info_t* info, char* dir)
 {
 	char* error = strjoin(NULL, " ", "can't cd to", dir);
+=======
+void __cd_error(info_t *info, char *dir)
+{
+	char *error = strjoin(NULL, " ", "can't cd to", dir);
+>>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	perrorl_default(*info->argv, info->lineno, error, *info->tokens, NULL);
 
@@ -21,10 +27,17 @@ void __cd_error(info_t* info, char* dir)
  * __cd_success - update the environment upon success
  * @info: shell info
  */
+<<<<<<< HEAD
 void __cd_success(info_t* info)
 {
 	char** tokens = info->tokens;
 	char* setenv_tokens[] = { "setenv", NULL, NULL, NULL };
+=======
+void __cd_success(info_t *info)
+{
+	char **tokens = info->tokens;
+	char *setenv_tokens[] = {"setenv", NULL, NULL, NULL};
+>>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	info->tokens = setenv_tokens;
 
@@ -53,9 +66,15 @@ void __cd_success(info_t* info)
  *
  * Return: int
  */
+<<<<<<< HEAD
 int __cd(info_t* info)
 {
 	char* dir = NULL, ** args = info->tokens + 1;
+=======
+int __cd(info_t *info)
+{
+	char *dir = NULL, **args = info->tokens + 1;
+>>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	info->status = EXIT_SUCCESS;
 	if (*args)

@@ -5,9 +5,15 @@
   * @info: arguments passed
   * Return: int
   */
+<<<<<<< HEAD
 int __env(info_t* info)
 {
 	env_t* var;
+=======
+int __env(info_t *info)
+{
+	env_t *var;
+>>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	info->status = EXIT_SUCCESS;
 
@@ -22,3 +28,7 @@ int __env(info_t* info)
 	}
 	return (info->status);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
