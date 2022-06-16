@@ -6,15 +6,9 @@
  * @name: the name of the alias
  * @value: the value of the alias
  */
-<<<<<<< HEAD
 void __alias_add(alias_t** aliases, const char* name, const char* value)
 {
 	alias_t* alias = get_dict_node(aliases ? *aliases : NULL, name);
-=======
-void __alias_add(alias_t **aliases, const char *name, const char *value)
-{
-	alias_t *alias = get_dict_node(aliases ? *aliases : NULL, name);
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	if (alias)
 	{
@@ -32,11 +26,7 @@ void __alias_add(alias_t **aliases, const char *name, const char *value)
  * __alias_print - print an alias
  * @alias: the alias to print
  */
-<<<<<<< HEAD
 void __alias_print(alias_t* alias)
-=======
-void __alias_print(alias_t *alias)
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 {
 	write(STDOUT_FILENO, alias->key, _strlen(alias->key));
 	write(STDOUT_FILENO, "='", 2);
@@ -51,17 +41,10 @@ void __alias_print(alias_t *alias)
  *
  * Return: status
  */
-<<<<<<< HEAD
 int __alias(info_t* info)
 {
 	alias_t* alias;
 	char* name, ** args = info->tokens + 1;
-=======
-int __alias(info_t *info)
-{
-	alias_t *alias;
-	char *name, **args = info->tokens + 1;
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 	ssize_t name_len;
 
 	info->status = EXIT_SUCCESS;
