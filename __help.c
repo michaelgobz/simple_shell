@@ -5,19 +5,11 @@
  * @info: shell info
  * Return: status
  */
-<<<<<<< HEAD
 int __help(struct info* info)
 {
 	const builtin_t* bp = NULL;
 	char* const* args = info->tokens + 1;
 	const char* desc = NULL;
-=======
-int __help(struct info *info)
-{
-	const builtin_t *bp = NULL;
-	char * const *args = info->tokens + 1;
-	const char *desc = NULL;
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 	size_t len = 0;
 
 	if (*args)
@@ -44,11 +36,7 @@ int __help(struct info *info)
 		}
 		if (info->status == EXIT_FAILURE)
 			perrorl_default(*info->argv, info->lineno, "No topics match",
-<<<<<<< HEAD
 				*info->tokens, *(args - 1), NULL);
-=======
-					*info->tokens, *(args - 1), NULL);
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 		return (info->status);
 	}
 	info->status = EXIT_SUCCESS;

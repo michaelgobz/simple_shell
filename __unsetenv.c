@@ -5,15 +5,9 @@
   * @info: arguments passed
   * Return: status
   */
-<<<<<<< HEAD
 int __unsetenv(info_t* info)
 {
 	char** args = info->tokens + 1;
-=======
-int __unsetenv(info_t *info)
-{
-	char **args = info->tokens + 1;
->>>>>>> 8b70825ebe3631919673c8d90baf8e18057b3f2c
 
 	if (*args)
 	{
