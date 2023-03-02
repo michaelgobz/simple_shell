@@ -5,7 +5,7 @@
   * @info: arguments passed
   * Return: int
   */
-int __exit(info_t* info)
+int __exit(info_t *info)
 {
 	char** args = info->tokens + 1;
 

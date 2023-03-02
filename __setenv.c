@@ -6,10 +6,10 @@
  *
  * Return: status
  */
-int __setenv(info_t* info)
+int __setenv(info_t *info)
 {
-	env_t* var;
-	char** args = info->tokens + 1, * val;
+	env_t *var;
+	char **args = info->tokens + 1, * val;
 
 	if (args[0])
 	{

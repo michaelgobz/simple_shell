@@ -5,9 +5,9 @@
   * @info: arguments passed
   * Return: int
   */
-int __env(info_t* info)
+int __env(info_t *info)
 {
-	env_t* var;
+	env_t *var;
 
 	info->status = EXIT_SUCCESS;
 

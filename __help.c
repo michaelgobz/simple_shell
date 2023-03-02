@@ -5,11 +5,11 @@
  * @info: shell info
  * Return: status
  */
-int __help(struct info* info)
+int __help(struct info *info)
 {
-	const builtin_t* bp = NULL;
-	char* const* args = info->tokens + 1;
-	const char* desc = NULL;
+	const builtin_t *bp = NULL;
+	char *const *args = info->tokens + 1;
+	const char *desc = NULL;
 	size_t len = 0;
 
 	if (*args)

@@ -5,7 +5,7 @@
   * @str: string passed
   * @chr: character passed
   * @n: max number of characters to check
-  * Return: Index of the first occurence, or -1 chr is not found
+  * Return: Index of the first occurance, or -1 chr is not found
   */
 ssize_t _strnchr(const char *str, char chr, size_t n)
 {

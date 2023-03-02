@@ -1,7 +1,23 @@
 {
     "cSpell.words": [
+        "arrdup",
+        "arrjoin",
+        "atou",
+        "cmdlist",
+        "cmdtree",
+        "isident",
+        "isquote",
+        "noquote",
+        "occurance",
+        "OLDPWD",
         "perrorl",
+        "reprompts",
+        "strjoina",
+        "strjoinl",
+        "strnchr",
+        "unsets",
         "Werror",
         "Wextra"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -5,7 +5,7 @@
  * @info: shell info
  * @dir: directory
  */
-void __cd_error(info_t* info, char* dir)
+void __cd_error(info_t *info, char *dir)
 {
 	char* error = strjoin(NULL, " ", "can't cd to", dir);
 
@@ -21,7 +21,7 @@ void __cd_error(info_t* info, char* dir)
  * __cd_success - update the environment upon success
  * @info: shell info
  */
-void __cd_success(info_t* info)
+void __cd_success(info_t *info)
 {
 	char** tokens = info->tokens;
 	char* setenv_tokens[] = { "setenv", NULL, NULL, NULL };
@@ -53,9 +53,9 @@ void __cd_success(info_t* info)
  *
  * Return: int
  */
-int __cd(info_t* info)
+int __cd(info_t *info)
 {
-	char* dir = NULL, ** args = info->tokens + 1;
+	char *dir = NULL, ** args = info->tokens + 1;
 
 	info->status = EXIT_SUCCESS;
 	if (*args)
