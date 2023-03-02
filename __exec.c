@@ -7,7 +7,7 @@
  */
 int __exec(info_t *info)
 {
-	char *exe, ** args = info->tokens + 1, ** env = NULL;
+	char *exe, **args = info->tokens + 1, **env = NULL;
 
 	if (!*args)
 		return ((info->status = EXIT_SUCCESS));

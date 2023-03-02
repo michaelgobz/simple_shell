@@ -44,7 +44,7 @@ void __alias_print(alias_t *alias)
 int __alias(info_t *info)
 {
 	alias_t *alias;
-	char *name, ** args = info->tokens + 1;
+	char *name, **args = info->tokens + 1;
 	ssize_t name_len;
 
 	info->status = EXIT_SUCCESS;

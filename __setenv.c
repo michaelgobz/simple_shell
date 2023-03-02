@@ -9,7 +9,7 @@
 int __setenv(info_t *info)
 {
 	env_t *var;
-	char **args = info->tokens + 1, * val;
+	char **args = info->tokens + 1, *val;
 
 	if (args[0])
 	{

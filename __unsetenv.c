@@ -7,7 +7,7 @@
   */
 int __unsetenv(info_t *info)
 {
-	char** args = info->tokens + 1;
+	char **args = info->tokens + 1;
 
 	if (*args)
 	{
