@@ -28,7 +28,6 @@ cmdlist_t *cmd_to_list(const char *cmd)
 	return (head);
 }
 
-
 /**
  * _cmd_to_list - construct a linked list of tokenized commands (helper)
  * @tailptr: pointer to the tail of the command list
