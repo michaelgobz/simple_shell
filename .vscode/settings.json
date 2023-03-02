@@ -15,6 +15,7 @@
         "strjoina",
         "strjoinl",
         "strnchr",
+        "tokptr",
         "unsets",
         "Werror",
         "Wextra"

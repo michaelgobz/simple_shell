@@ -67,9 +67,9 @@ char **_expand_vars(info_t *info, char ***tokptr)
 			if (!tok[++pos] || !tok[++pos])
 				break;
 			state = quote_state(tok[pos]);
-			if (state & 
-			(QUOTE_DOUBLE | 
-			QUOTE_SINGLE | QUOTE_ESCAPE))
+			if (state &
+				(QUOTE_DOUBLE |
+				 QUOTE_SINGLE | QUOTE_ESCAPE))
 				++pos;
 			continue;
 		}
@@ -86,11 +86,10 @@ char **_expand_vars(info_t *info, char ***tokptr)
 		{
 			val = num_to_str(info->status);
 		}
-		else if (_isident(tok[pos + 1]) && 
-		!_isdigit(tok[pos + 1]))
+		else if (_isident(tok[pos + 1]) &&
+				 !_isdigit(tok[pos + 1]))
 		{
-			while 
-      (_isident(tok[pos + var_len + 1]))
+			while (_isident(tok[pos + var_len + 1]))
 				++var_len;
 
 			var = _strndup(tok + pos + 1, var_len);
@@ -107,13 +106,14 @@ char **_expand_vars(info_t *info, char ***tokptr)
 		if (val)
 		{
 			val_len = _strlen(val);
-			**tokptr = malloc(sizeof(char) * 
-			(pos + val_len +
-       _strlen(tok + pos + var_len) + 1));
+			**tokptr = malloc(sizeof(char) *
+							  (pos + val_len +
+							   _strlen(tok + pos + var_len) + 1));
 			_memcpy(**tokptr, tok, pos);
 			_memcpy(**tokptr + pos, val, val_len);
-			_strcpy(**tokptr + pos + 
-      val_len, tok + pos + var_len + 1);
+			_strcpy(**tokptr + pos +
+						val_len,
+					tok + pos + var_len + 1);
 
 			free(tok);
 			tok = **tokptr;
