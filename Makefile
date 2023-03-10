@@ -6,8 +6,6 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 RM = rm -f
 .PHONY: all clean oclean fclean re
 
-betty compliance:
-     $(betty *.c)
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 clean:
