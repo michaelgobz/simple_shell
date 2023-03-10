@@ -9,8 +9,7 @@ To install our shell on your Linux machine, clone the contents of this repositor
     gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 or just do make at the root of the project via the make utility
-
-```make ```
+    make 
 
 ## Usage
 #### Interactive Mode
